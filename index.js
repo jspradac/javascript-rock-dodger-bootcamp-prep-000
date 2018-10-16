@@ -137,6 +137,11 @@ function moveDodger(e) {
     e.stopPropagation();
     moveDodgerLeft();
   }
+  if (e.which === RIGHT_ARROW) {
+    e.preventDefault();
+    e.stopPropagation();
+    moveDodgerRight();
+  }
   
   // implement me!
   /**
